@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>practic</title>
+	<style type="text/css">
+		table,td,th{
+			border:1px solid black;
+			border-collapse: collapse;
+		}
+		th{
+			text-align: left;
+		}
+		td,th{
+			padding: 16px;
+		}
+		table#t2 th{
+			background-color: black;
+			color: white;
+		}
+		table#t2 tr:nth-child(odd){
+			background-color: powderblue;
+		}
+		table#t2 tr:nth-child(even){
+			background-color: pink;
+		}
+		#link:visited,#link:link{
+			border:1px solid green;
+			background-color: green;
+			padding:5px 10px;
+			text-decoration: none;
+			color: black;
+			margin-left: 50%;
+			
+		}
+		#link:hover,#link:active{
+			border:1px solid red;
+			background-color: red;
+			padding:5px 10px;
+			text-decoration: none;
+			color: white;
+		}
+		ul#nav{
+			list-style-type: none;
+			border:1px solid gray;
+			color: white;
+			background-color: gray;
+			display: flex;
+			margin: 0;
+			padding: 0;
+		}
+		li.navli{
+			padding-top:20px;
+			padding-bottom:20px;
+		}
+		li a.navlink:link,li a.navlink:visited{
+			padding:20px 15px;
+			/*display: block;*/
+			text-decoration: none;
+			color: white;
+		}
+		li a.navlink:active, a.navlink:hover{
+			padding:20px 15px;
+			text-decoration: none;
+			color: white;
+			background-color: black;
+		}
+
+	</style>
+</head>
+<body>
+
+	<ul id="nav">
+		<li class="navli"><a class="navlink" href="#home">home</a></li>
+		<li class="navli"><a class="navlink" href="">news</a></li>
+		<li class="navli"><a class="navlink" href="">contact</a></li>
+		<li class="navli"><a class="navlink" href="">about</a></li>
+		
+	</ul>
+
+
+	<table id="t2" style="width: 100%;">
+		<caption>form1</caption>
+		<tr>
+			<th>name</th>
+			<th colspan="3">phone</th>
+		</tr>
+		<tr>
+			<td>john doe</td>
+			<td>55</td>
+			<td>56</td>
+			<td>67</td>
+		</tr>
+		<tr>
+			<td>john</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+		</tr>
+	</table>
+	<hr>
+	<hr>
+	<table  style="width:100%;">
+		<caption>form</caption>
+		<tr>			
+			<th>name</th>
+			<td>sara</td>
+		</tr>
+		<tr>
+			<th rowspan="3">phone</th>
+			<td>78</td>
+		</tr>
+		<tr>
+			<td>78</td>
+		</tr>
+		<tr>
+			<td>78</td>
+		</tr>
+	</table>
+	<hr>
+	<hr>
+
+	<a href="google.com" id="link">this is link</a>
+
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+
+	<ul style="list-style-type: square;">
+		<li>tea</li>
+		<li>coffee</li>
+		<dl>
+			<li>alaki</li>
+			<dt>juice</dt>
+			<dd>orange</dd>
+			<dd>apple</dd>
+			<dd>kiwi</dd>
+		</dl>
+
+	</ul>
+
+	<ol type="A">
+		<li>monkey</li>
+		<li>snake</li>
+		<li>horse</li>
+	</ol>
+
+	<hr>
+	<br>
+
+	<form>
+		<label>First Name</label>
+		<input type="text" name="firstname" placeholder="behshad">
+		<br><br><br>
+		<label>Last Name</label>
+		<input type="text" name="lastname" placeholder="baghbanzadeh">
+		<br><br><br>
+		<label>model</label>
+		<label>1</label>
+		<input type="radio" name="model" value="1">
+		<label>2</label>
+		<input type="radio" name="model" value="2">
+		<label>3</label>
+		<input type="radio" name="model" value="3">
+		<br><br><br>
+		<input type="submit" name="s" value="send">
+
+
+	</form>
+
+
+</body>
+</html>
