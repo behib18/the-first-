@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>practic</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">
 		table,td,th{
 			border:1px solid black;
@@ -54,7 +56,6 @@
 		}
 		li a.navlink:link,li a.navlink:visited{
 			padding:20px 15px;
-			/*display: block;*/
 			text-decoration: none;
 			color: white;
 		}
@@ -64,11 +65,22 @@
 			color: white;
 			background-color: black;
 		}
+		.heading{
+			background-color: pink;
+			padding: 20px;
+			text-align: center;
+		}
+		body {
+		  margin: 0;
+		}
 
 	</style>
 	
 </head>
 <body>
+	<div class="heading">
+		<h1>heading</h1>
+	</div>
 
 	<ul id="nav">
 		<li class="navli"><a class="navlink" href="#home">home</a></li>
@@ -185,6 +197,7 @@
 		<button onclick="document.getElementById('changes').innerHTML=Date()";>click here</button>
 		<p id="styletext">hi,how are you?!</p>
 		<button onclick="changeStyle()">styling</button>
+		
 
 
 
