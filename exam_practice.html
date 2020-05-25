@@ -66,6 +66,7 @@
 		}
 
 	</style>
+	
 </head>
 <body>
 
@@ -165,7 +166,7 @@
 			<label>3</label>
 			<input type="radio" name="model" value="3">
 			<br><br><br>
-			<select name="color">
+			<select name="color" size="2" multiple>
 				<option value="red">Red</option>
 				<option value="black">Black</option>
 				<option value="brown">brown</option>
@@ -173,11 +174,20 @@
 			<br><br><br>
 			<input type="submit" name="s" value="send">
 		</fieldset>	
+
 		
 	</form>
+		<hr>
+
+		<button onclick="showText()">click me!</button>
+		<p id="change">when you click button this text change!</p>
 
 
-
+	<script type="text/javascript">
+		function showText(){
+			document.getElementById("change").innerHTML="yes";
+		}
+	</script>
 
 </body>
 </html>
